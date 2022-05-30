@@ -1,5 +1,7 @@
 const Intern = require("../intern");
 
+jest.mock("../setID");
+
 describe("Intern", () => {
     describe("Initialization", () => {
         it("should return an object containing an 'id' property when called with the 'new' keyword", () => {
@@ -21,9 +23,10 @@ describe("Intern", () => {
         });
 
         it("should set 'id' when created", () => {
+            setID.mockReturnValue(66);
             const obj = new Intern("mail", "ucsd");
 
-            expect()
+            expect(obj.id).toEqual(66);
         });
 
         it("should set 'email' when created", () => {
