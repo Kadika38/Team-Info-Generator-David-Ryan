@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2, h3 {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    background-color: #43aa8b;
+    color: white;
+}
+
+h2 {
+    border-radius: 7px 7px 0 0;
+}
+
+#redSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #21295c;
+    color: white;
+    height: 100px;
+    width: 100%;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 85%;
+}
+
+.card {
+    width: 250px;
+    margin: 25px;
+    border-radius: 7px 7px;
+    border-color: lightgray;
+    background-color: #f0f7f4;
+    box-shadow: 5px 5px 4px lightgray;
+}
+
+.graySec {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.whiteSec {
+    width: 80%;
+    background-color: white;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: -3px;
+}
+
+#iconCustomKadika {
+    margin-bottom: -3px;
+}

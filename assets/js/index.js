@@ -141,12 +141,17 @@ function addInt(tm) {
 }
 
 function done(tm) {
+    const template = createTemplate(tm);
     fs.writeFile('index.html', 
-    ``, 
-    //if theres a error, console log the error, if not console log "Success!"
+    template, 
+    //if theres an error, console log the error, if not console log "Success!"
     (err) =>
         err ? console.error(err) : console.log("Success!")
     );
 };
+
+function createTemplate(tm) {
+    
+}
 
 start();
