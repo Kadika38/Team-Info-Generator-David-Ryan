@@ -50,4 +50,20 @@ describe("Engineer", () => {
             expect(obj.github).toEqual("github");
         });
     });
+
+    describe("getGithub", () => {
+        it("should return the engineers github when called", () => {
+            const obj = new Engineer("Maki", 4, "mail", "github");
+
+            expect(obj.getGithub()).toEqual("github");
+        });
+    });
+
+    describe("getRole", () => {
+        it("should return 'Engineer' when called", () => {
+            const obj = new Engineer("Maki", 4, "mail", "github");
+
+            expect(obj.getRole()).toEqual("Engineer");
+        });
+    });
 });

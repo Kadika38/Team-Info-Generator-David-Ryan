@@ -50,4 +50,20 @@ describe("Intern", () => {
             expect(obj.school).toEqual("ucsd");
         });
     });
+
+    describe("getSchool", () => {
+        it("should return the interns school when called", () => {
+            const obj = new Intern("Phil", 4, "mail", "ucsd");
+
+            expect(obj.getSchool()).toEqual("ucsd");
+        });
+    });
+
+    describe("getRole", () => {
+        it("should return 'Intern' when called", () => {
+            const obj = new Intern("Phil", 4, "mail", "ucsd");
+
+            expect(obj.getRole()).toEqual("Intern");
+        });
+    });
 });

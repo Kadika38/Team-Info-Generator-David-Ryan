@@ -50,4 +50,20 @@ describe("Manager", () => {
             expect(obj.office).toEqual(12);
         });
     });
+
+    describe("getOffice", () => {
+        it("should return the manager's office number", () => {
+            const obj = new Manager("Aurora", 4, "mail", 12);
+
+            expect(obj.getOffice()).toEqual(12);
+        })
+    })
+
+    describe("getRole", () => {
+        it("should return 'Manager' when called", () => {
+            const obj = new Manager("Aurora", 4, "mail", 12);
+
+            expect(obj.getRole()).toEqual("Manager");
+        })
+    })
 });
