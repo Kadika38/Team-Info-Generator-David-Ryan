@@ -17,6 +17,11 @@ h2 {
     border-radius: 7px 7px 0 0;
 }
 
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
 #redSec {
     display: flex;
     justify-content: center;
@@ -63,6 +68,6 @@ h2 {
     margin-bottom: -3px;
 }
 
-#iconCustomKadika {
+.iconCustomKadika {
     margin-bottom: -3px;
 }
