@@ -150,8 +150,32 @@ function done(tm) {
     );
 };
 
-function createTemplate(tm) {
+const html1 = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Reset CSS-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--Other stylesheets-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Team Info Dashboard</title>
+  </head>
+
+  <body>
+    <div id="redSec">
+        <h1>My Team</h1>
+    </div>
+
+    <div id="container">`
+
+const html2 = `</div>
     
+</body>
+</html>`
+
+function createTemplate(tm) {
+    return html1 + html2;
 }
 
 start();
